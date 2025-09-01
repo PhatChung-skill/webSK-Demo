@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt Vé Thường - MusicFest 2025</title>
+  <link rel="stylesheet" href="styleWeb.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">🎵 MusicFest</div>
+    <nav>
+      <ul>
+        <li><a href="webSKTrangGT.html">Trang chủ</a></li>
+        <li><a href="webSKTrangGT.html#about">Giới thiệu</a></li>
+        <li><a href="webSKTrangGT.html#schedule">Lịch trình</a></li>
+        <li><a href="webSKTrangGT.html#tickets">Vé</a></li>
+        <li><a href="webSKTrangGT.html#contact">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Form Đặt Vé -->
+  <section class="section" style="margin-top:100px;">
+    <h2>Đặt Vé Thường</h2>
+    <form class="ticket-form">
+      <label for="name">Họ và tên:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Số điện thoại:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="quantity">Số lượng vé:</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+      <p><strong>Giá vé:</strong> 500.000 VNĐ/vé</p>
+
+      <p id="total"><strong>Tổng tiền:</strong> 500.000 VNĐ</p>
+
+      <button type="submit" class="btn">Xác nhận đặt vé</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MusicFest. All rights reserved.</p>
+  </footer>
+
+   <script>
+    const price = 500000; // Giá vé thường
+    const quantityInput = document.getElementById('quantity');
+    const totalText = document.getElementById('total');
+
+    function formatMoney(number) {
+      return number.toLocaleString('vi-VN') + ' VNĐ';
+    }
+
+    function updateTotal() {
+      const quantity = parseInt(quantityInput.value) || 1;
+      const total = quantity * price;
+      totalText.innerHTML = "<strong>Tổng tiền:</strong> " + formatMoney(total);
+    }
+
+    // Gọi khi người dùng thay đổi số lượng
+    quantityInput.addEventListener('input', updateTotal);
+
+    // Cập nhật ngay khi tải trang
+    updateTotal();
+  </script>
+
+</body>
+</html>
