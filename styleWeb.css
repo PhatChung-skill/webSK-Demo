@@ -1,0 +1,231 @@
+/* Reset mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li {
+  margin-left: 20px;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: #f39c12;
+}
+
+/* Hero Banner */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #f39c12;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #d35400;
+}
+
+/* Section */
+.section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #333;
+}
+
+.section p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Timeline */
+.timeline {
+  list-style: none;
+  text-align: center;
+}
+
+.timeline li {
+  margin: 10px 0;
+}
+
+/* Artists */
+.artist-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.artist-card {
+  text-align: center;
+  width: 200px;
+}
+
+.artist-card img {
+  width: 100%;
+  height: 285px;
+  border-radius: 10px;
+}
+
+/* Tickets */
+.ticket-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ticket-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.ticket-card h3 {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Form đặt vé */
+.ticket-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 15px;
+}
+
+.ticket-form label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.ticket-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+    /* Style cho thanh tìm kiếm */
+    .search-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+    }
+    .search-box input {
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px 0 0 20px;
+      outline: none;
+    }
+    .search-box button {
+      padding: 6px 12px;
+      border: none;
+      background-color: #ff4757;
+      color: white;
+      border-radius: 0 20px 20px 0;
+      cursor: pointer;
+    }
+    .search-box button:hover {
+      background-color: #e84118;
+    }
+
+    /* Kết quả tìm kiếm */
+.search-results {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #f0f8ff; /* xanh nhạt dễ nhìn hơn */
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  width: 250px;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2); /* thêm bóng */
+}
+.search-results p {
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+}
+.search-results p:hover {
+  background: #ffeaa7; /* vàng nhạt khi hover */
+  color: #000;
+  font-weight: bold;
+}
