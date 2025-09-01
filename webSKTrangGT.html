@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sự kiện Âm Nhạc Quốc Tế 2025</title>
+  <link rel="stylesheet" href="styleWeb.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">🎵 Tân Chung</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Trang chủ</a></li>
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#schedule">Lịch trình</a></li>
+        <li><a href="#tickets">Vé</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+    </nav>
+
+    <!-- Thanh tìm kiếm -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Tìm nghệ sĩ, vé...">
+      <button onclick="searchSite()">🔍</button>
+      <div id="searchResults" class="search-results"></div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Sự Kiện Âm Nhạc Quốc Tế 2025</h1>
+      <p>Trải nghiệm âm nhạc đỉnh cao với hàng loạt nghệ sĩ nổi tiếng</p>
+      <a href="#tickets" class="btn">Đặt vé ngay</a>
+    </div>
+  </section>
+
+  <!-- Giới thiệu -->
+  <section id="about" class="section">
+    <h2>Giới thiệu sự kiện</h2>
+    <p>Sự kiện Âm Nhạc Quốc Tế 2025 là nơi hội tụ của hàng trăm nghệ sĩ hàng đầu đến từ nhiều quốc gia. 
+       Đây là cơ hội tuyệt vời để bạn hòa mình vào bầu không khí sôi động, thưởng thức những màn trình diễn 
+       đặc sắc và giao lưu cùng cộng đồng yêu âm nhạc.</p>
+  </section>
+
+  <!-- Lịch trình -->
+  <section id="schedule" class="section">
+    <h2>Lịch trình sự kiện</h2>
+    <ul class="timeline">
+      <li><strong>Ngày tổ chức:</strong> 12/11/2025-15/11/2025</li>
+      <li><strong>Ngày 1:</strong> Khai mạc & Biểu diễn mở màn</li>
+      <li><strong>Ngày 2:</strong> Các tiết mục đặc biệt & giao lưu nghệ sĩ</li>
+      <li><strong>Ngày 3:</strong> Đêm nhạc bùng nổ & bế mạc</li>
+    </ul>
+  </section>
+
+  <!-- Nghệ sĩ -->
+  <section id="artists" class="section">
+    <h2>Nghệ sĩ tham gia</h2>
+    <div class="artist-list">
+      <div class="artist-card">
+        <img src="image/Son-Tung.png" alt="Sơn Tùng MTP">
+        <h3>Sơn Tùng MTP</h3>
+      </div>
+      <div class="artist-card">
+        <img src="image/jack.jpg" alt="Jack-j97">
+        <h3>Jack-j97</h3>
+      </div>
+      <div class="artist-card">
+        <img src="image/Bich-Phuong.jpg" alt="Bich-Phuong">
+        <h3>Bích Phương</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vé -->
+  <section id="tickets" class="section">
+    <h2>Giá vé</h2>
+    <div class="ticket-list">
+      <div class="ticket-card">
+        <h3>Vé Thường</h3>
+        <p>500.000 VNĐ</p>
+        <a href="veThuong.html" class="btn">Đặt vé</a>
+      </div>
+      <div class="ticket-card">
+        <h3>Vé VIP</h3>
+        <p>1.000.000 VNĐ</p>
+        <a href="veVip.html" class="btn">Đặt vé</a>
+      </div>
+      <div class="ticket-card">
+        <h3>Vé Online</h3>
+        <p>300.000 VNĐ</p>
+        <a href="veOnline.html" class="btn">Đặt vé</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Địa điểm -->
+  <section id="contact" class="section">
+    <h2>Địa điểm tổ chức</h2>
+    <p>Nhà hát Hòa Bình, TP. Hồ Chí Minh</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.51254481577!2d106.67787301526074!3d10.776922262182571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4085a7c9cf%3A0x9b67d8aafad1e7c5!2sNh%C3%A0%20h%C3%A1t%20H%C3%B2a%20B%C3%ACnh!5e0!3m2!1svi!2s!4v1693133761530!5m2!1svi!2s" 
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MusicFest. All rights reserved.</p>
+    <p>Theo dõi chúng tôi: 
+      <a href="https://www.facebook.com/">Facebook</a> | 
+      <a href="https://www.Instagram.com/">Instagram</a> | 
+      <a href="https://www.YouTube.com/">YouTube</a>
+    </p>
+  </footer>
+
+  <script>
+    const data = [
+      { name: "Sơn Tùng MTP", link: "#artists" },
+      { name: "Jack-j97", link: "#artists" },
+      { name: "Bích Phương", link: "#artists" },
+      { name: "Vé Thường", link: "veThuong.html" },
+      { name: "Vé VIP", link: "veVip.html" },
+      { name: "Vé Online", link: "veOnline.html" },
+      { name: "Lịch trình sự kiện", link: "#schedule" }
+    ];
+
+    function searchSite() {
+      let input = document.getElementById("searchInput").value.toLowerCase();
+      let results = document.getElementById("searchResults");
+      results.innerHTML = "";
+      if (input === "") {
+        results.style.display = "none";
+        return;
+      }
+
+      let filtered = data.filter(item => item.name.toLowerCase().includes(input));
+
+      if (filtered.length > 0) {
+        filtered.forEach(item => {
+          let p = document.createElement("p");
+          p.textContent = item.name;
+          p.onclick = () => { window.location.href = item.link; };
+          results.appendChild(p);
+        });
+        results.style.display = "block";
+      } else {
+        results.innerHTML = "<p>Không tìm thấy kết quả</p>";
+        results.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
